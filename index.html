@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameLab｜アプリ</title>
+<meta name="description" content="GameLab が開発・運営しているスマートフォンアプリの公式サイトです。">
+<link rel="icon" href="tsumoributa/icon.png">
+<style>
+  :root { --bg:#FAF7F5; --fg:#26211F; --muted:#6E6560; --card:#FFFFFF; --line:#EAE3DE; --accent:#C8456B; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1C1918; --fg:#F2ECE8; --muted:#B4AAA4; --card:#262220; --line:#3A3431; --accent:#FF8FAB; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.8; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:2rem; margin:0; letter-spacing:.02em; }
+  .lead { color:var(--muted); margin:4px 0 32px; }
+  h2 { font-size:1.1rem; margin:0 0 12px; }
+  .apps { display:grid; gap:12px; }
+  .app { display:flex; gap:16px; align-items:center; background:var(--card); border:1px solid var(--line);
+         border-radius:16px; padding:16px; color:inherit; text-decoration:none; }
+  .app:hover { border-color:var(--accent); }
+  .app img { width:72px; height:72px; border-radius:16px; flex:none; }
+  .app .name { font-weight:700; font-size:1.1rem; }
+  .app .desc { color:var(--muted); font-size:.92rem; }
+  .app .more { color:var(--accent); font-size:.9rem; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>GameLab</h1>
+  <p class="lead">毎日の暮らしをちょっと楽しくする、スマートフォンアプリを作っています。</p>
+
+  <h2>アプリ</h2>
+  <div class="apps">
+    <!-- アプリを追加するときは、この <a class="app"> をコピーして並べる -->
+    <a class="app" href="tsumoributa/">
+      <img src="tsumoributa/icon.png" alt="つもりぶたのアイコン">
+      <div>
+        <div class="name">つもりぶた</div>
+        <div class="desc">がまんをワンタップで貯金に。ログイン不要のつもり貯金・目標貯金アプリ（iPhone / Android）</div>
+        <div class="more">サポート・プライバシーポリシー →</div>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <p>運営：【事業者名】<br>お問い合わせ：【お問い合わせ用メールアドレス】</p>
+  </footer>
+</main>
+</body>
+</html>
